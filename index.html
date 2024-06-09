@@ -5,7 +5,7 @@
         <title>Caio Oliveira</title>
         
         <!-- Estilos (Bootstrap e CSS)-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
@@ -26,9 +26,6 @@
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre mim</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#skills">Habilidades</a>
                         </li>
                         <li class="nav-item">
@@ -40,97 +37,127 @@
         </header>
         
         <!-- Seção inicial do Site -->
-        <section id="home">
+        <section id="home" class="mt-3">
             
-            <!-- Título da Página -->
-            <div id="title ml-5">
-                <h1>
-                    Caio<br/>
-                    Oliveira
-                </h1>
-                <h4>
-                    Developer
-                </h4>
-        </section>
-        
-        <!-- Sessão Sobre Mim-->
-        <section id="about">
-            <h1>Sobre mim:</h1>
-            
-            <!-- Parágrafo sobre mim -->
-            <p>
-                Meu nome &eacute; Caio Oliveira, sou Desenvolvedor e tenho 16 anos.<br/>
-                Tenho um <abbr title="Computer Sciente 50">CS50x</abbr> e estudo Desenvolvimento de Sistemas<br/>
-                Você pode me contatar por <a href="mailto:caioreisoliveiradev@gmail.com">esse email</a>
-            </p>
+            <div class="d-flex flex-row">
+                <!-- Imagem minha -->
+                <img src="me.png" id="me" class="ms-3">
+
+                <!-- Título da Página -->
+                <div id="title" class="ml-5 mt-5">
+                    <h1>
+                        Caio<br/>
+                        Oliveira
+                    </h1>
+                    <h4>
+                        Developer
+                    </h4>
+                </div>
+
+                <div class="ms-auto mt-5" id="about">
+                    <!-- Parágrafo sobre mim -->
+                    <p>
+                        Sou Desenvolvedor, moro no Brasil e tenho 16 anos.<br/>
+                        Faço T&eacute;cnico em Sistemas e conclu&iacute; o <a href="https://certificates.cs50.io/6670bf1e-c5ae-4bbd-b8cc-33aabd4e448f.pdf?size=letter">CS50x</a>. <br/>
+                        Tenho interesse nas &aacute;reas de BackEnd, Banco de Dados e Estat&iacute;stica.<br/>
+                        Al&eacute;m disso, gosto muito de m&uacute;sica e xadrez.<br/>
+                        Voc&ecirc; pode me contatar por: 
+                        <ul>
+                            <li>
+                                <a href="mailto:caioreisoliveiradev@gmail.com">Email</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/caiooliveira1609">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/5562985192281">WhatsApp</a>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- Sessão de Habilidades -->
         <section id="skills">
-            <h1>Habilidades</h1>
-            
-            <!-- Lista de habilidades -->
-            <ul>
-                <li>
-                    Conhecimento básico de HTML / CSS / JavaScript
-                </li>    
-                <li>
-                    Python
-                </li>
-                <li>
-                    C
-                </li>
-                <li>
-                    SQL
-                </li>
-                <li>
-                    Ferramentas da AWS
-                </li>
-                <li>
-                    Git / GitHub
-                </li>
-            </ul>
+            <div class="bg-dark text-light py-5 mx-auto d-flex flex-row-reverse">
+                <div id="skills-list">
+                    <h1>Habilidades</h1>
+                    
+                    <!-- Lista de habilidades -->
+                    <ul>
+                        <li>
+                            Python
+                        </li>    
+                        <li>
+                            C
+                        </li>
+                        <li>
+                            SQL
+                        </li>
+                        <li>
+                            HTML / CSS / JavaScript
+                        </li>
+                        <li>
+                            Ferramentas da AWS
+                        </li>
+                        <li>
+                            Git / GitHub
+                        </li>
+                        <li>
+                            Bash e PowerShell
+                        </li>
+                        <li>
+                            Inglês Intermediário
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Sessão de Projetos -->
         <section id="projects">
             <h1>Projetos</h1>
-            
-            <div>
-                <h2>WoshWear</h2>
-                <br/>
-                <p>
-                    Site para uma loja de roupas independente aqui da minha cidade. 
-                    Link se encontra em <a href="http://www.woshear.cf">www.woshwear.cf</a>
-                </p>
+            <br/>
+            <div class="d-flex justify-content-between ms-2" id="project-div">
+                <div>
+                    <h2>WoshWear</h2>
+                    <br/>
+                    <p>
+                        E-commerce de Vestuário. Portal demonstrativo.<br/>
+                        Acesse <a href="https://github.com/Caio1609D/wosh">aqui</a> o repositório.
+                    </p>
+                </div>
+                
+                <div>
+                    <h2>Projeto para o Senai</h2>
+                    <br/>
+                    <p>
+                        Projeto de registro de uso de reagentes químicos no laborat&oacute;rio do SENAI.<br/>
+                        Acesse <a href="https://github.com/Caio1609D/project-senai">aqui</a> o repositório.
+                    </p>
+                </div>
+                
+                <div>
+                    <h2>Forms Medicina</h2>
+                    <br/>
+                    <p>
+                        Ferramenta para automatizar um processo que tinhamos na Secretaria da Faculdade de Medicina.<br/>
+                        Acesse <a href="https://github.com/Caio1609D/unievangelica-form">aqui</a> o repositório.<br/>
+                        Esse repositório é privado.
+                    </p>
+                </div>
+                
+                <div>
+                    <h2>AceTK</h2>
+                    <br/>
+                    <p>
+                        Ferramenta para auxiliar no desenvolvimento de sites que conformem com as <span class="fw-bolder">Diretrizes de Acessibilidade na Web</span>.<br/>
+                        Acesse <a href="https://github.com/Caio1609D/AceTK">aqui</a> o repositório.
+                    </p>
+                </div>
             </div>
             
-            <div class="text-end">
-                <h2>Projeto Senai</h2>
-                <br/>
-                <p>
-                    Projeto pra auxiliar o registro de uso de reagentes em um laborat&oacute;rio do SENAI 
-                    Acesse <a href="https://github.com/Caio1609D/project-senai">aqui</a> o repositório
-                </p>
-            </div>
-
-            <div>
-                <h2>Forms Unievangelica</h2>
-                <br/>
-                <p>
-                    Ferramenta para automatizar um processo que tinhamos na Secretaria de Medicina da UniEvangelica 
-                    Acesse <a href="https://github.com/Caio1609D/unievangelica-form">aqui</a> o repositório
-                </p>
-            </div>
-            
-            <div class="text-end">
-                <h2>AceTK</h2>
-                <br/>
-                <p>
-                    Projeto pra auxiliar o desenvolvimento de sites que conformem com as Diretrizes de Acessibilidade na Web 
-                    Acesse <a href="https://github.com/Caio1609D/AceTK">aqui</a> o repositório
-                </p>
-            </div>
 
 
         </section>
