@@ -27,11 +27,22 @@ a {
     margin: 0.5%;
 }
 
-#me {
-    margin-right: 2.5%;
-    width: 20vw;
-    height: calc(20vw * (2744 / 1800));
-    box-shadow: 0.25em 0.25em black;
+@media (orientation: landscape) {
+    #me {
+        margin-right: 2.5%;
+        width: 20vw;
+        height: calc(20vw * (2744 / 1800));
+        box-shadow: 0.25em 0.25em black;
+    }
+}
+
+@media (orientation: portrait) {
+    #me {
+        margin-right: 2.5%;
+        width: 25vw;
+        height: calc(25vw * (2744 / 1800));
+        box-shadow: 0.25em 0.25em black;
+    } 
 }
 
 #about {
