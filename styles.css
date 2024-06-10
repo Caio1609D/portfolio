@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 section {
@@ -11,7 +11,7 @@ p, li, span {
 }
 
 h1, h4, p, ul {
-    margin-left: 1%
+    margin-left: 1%;
 }
 
 li {
@@ -39,5 +39,5 @@ a {
 
 #skills-list {
     margin-right: 28.5%;
-    width: 25%
+    width: 25%;
 }
