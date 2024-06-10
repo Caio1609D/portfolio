@@ -29,8 +29,9 @@ a {
 
 #me {
     margin-right: 2.5%;
-    width: 20%;
-    box-shadow: 0.25em 0.25em black
+    width: 20vw;
+    height: calc(20vw * (2744 / 1800));
+    box-shadow: 0.25em 0.25em black;
 }
 
 #about {
